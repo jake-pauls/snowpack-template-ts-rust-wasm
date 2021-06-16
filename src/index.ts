@@ -4,10 +4,12 @@
  *
  * Once you're ready to build, clear the file. Happy Hacking!
  */
-import init, { add } from 'wasm_crate';
+import init, { greet, add } from 'wasm_crate';
 
 const main = async () => {
   await init();
+
+  greet('Welcome to Snowpack, Rust, and WebAssembly!');
 
   console.log('Addition from Rust: ', add(4, 2));
 };

@@ -12,5 +12,19 @@ edition = "2018"
 crate-type = ["cdylib"]
 
 [dependencies]
-cargo-watch = "^7.0.0"
-wasm-bindgen = "^0.2"
+wasm-bindgen = "^0.2.74"
+wasm-bindgen-futures = "^0.4.13"
+js-sys = "^0.3.40"
+
+# 'wee_alloc' is a smaller allocator than the wasm default (~1K in code size, requires rust nightly)
+wee_alloc = { version = "^0.4.5", optional = true }
+
+[dev-dependencies]
+wasm-bindgen-test = "^0.3.13"
+
+[profile.release]
+# tell the rust compiler to use link time optimizations for a smaller .wasm
+lto = true
+
+# tell the rust compiler to optimize for small code size
+opt-level = "s"

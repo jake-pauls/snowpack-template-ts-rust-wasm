@@ -1,5 +1,5 @@
 {
-  "name": "snowpack-template-rust-wasm-ts",
+  "name": "snowpack-template-ts-rust-wasm",
   "version": "0.0.1",
   "author": {
     "name": "Jake Pauls",
@@ -18,7 +18,9 @@
   "license": "MIT",
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build",
+    "build:web": "snowpack build",
+    "build:wasm": "cd wasm_crate && wasm-pack build --target web",
+    "test:wasm": "cd wasm_crate && wasm-pack test --node",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\""
   },
