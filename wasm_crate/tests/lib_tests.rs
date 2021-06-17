@@ -16,5 +16,5 @@ async fn promise_test() {
     // Convert that promise into a Rust Future
     let future = JsFuture::from(promise).await.unwrap();
 
-    assert_eq!(future, 42); 
+    assert_eq!(future, 42);
 }

@@ -1,35 +1,29 @@
 {
-  "name": "snowpack-template-ts-rust-wasm",
-  "version": "0.0.1",
-  "author": {
-    "name": "Jake Pauls",
-    "email": "jakepauls99@gmail.com",
-    "website": "jakepauls.dev"
-  },
-  "description": "Snowpack CSA Template for Rust and WebAssembly",
-  "repository": "github:jake-pauls/snowpack-template-rust-wasm",
-  "keywords": [
-    "snowpack",
-    "csa-template",
-    "rust",
-    "webassembly",
-    "wasm"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "start": "snowpack dev",
-    "build:web": "snowpack build",
-    "build:wasm": "cd wasm_crate && wasm-pack build --target web",
-    "test:wasm": "cd wasm_crate && wasm-pack test --node",
-    "format": "prettier --write \"src/**/*.js\"",
-    "lint": "prettier --check \"src/**/*.js\""
-  },
-  "devDependencies": {
-    "@snowpack/plugin-typescript": "^1.2.1",
-    "@types/snowpack-env": "^2.3.3",
-    "prettier": "^2.2.1",
-    "snowpack": "^3.3.7",
-    "snowpack-plugin-wasm-pack": "^1.1.0",
-    "typescript": "^4.3.2"
-  }
+    "name": "snowpack-template-ts-rust-wasm",
+    "version": "0.0.1",
+    "author": {
+        "name": "Jake Pauls",
+        "email": "jakepauls99@gmail.com",
+        "website": "jakepauls.dev"
+    },
+    "description": "Snowpack CSA Template for Rust and WebAssembly",
+    "repository": "github:jake-pauls/snowpack-template-rust-wasm",
+    "keywords": ["snowpack", "csa-template", "rust", "webassembly", "wasm"],
+    "license": "MIT",
+    "scripts": {
+        "start": "snowpack dev",
+        "build": "snowpack build",
+        "wasm:build": "cd wasm_crate && wasm-pack build --target web",
+        "wasm:test": "cd wasm_crate && wasm-pack test --node",
+        "format": "prettier --write \"src/**/*.js\"",
+        "lint": "prettier --check \"src/**/*.js\""
+    },
+    "devDependencies": {
+        "@snowpack/plugin-typescript": "^1.2.1",
+        "@types/snowpack-env": "^2.3.3",
+        "prettier": "^2.2.1",
+        "snowpack": "^3.3.7",
+        "snowpack-plugin-wasm-pack": "^1.1.0",
+        "typescript": "^4.3.2"
+    }
 }
