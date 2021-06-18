@@ -19,6 +19,7 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
+    "test": "yarn wasm:test",
     "wasm:build": "cd wasm_crate && wasm-pack build --target web",
     "wasm:test": "cd wasm_crate && wasm-pack test --node",
     "format": "prettier --write \"src/**/*.js\"",
