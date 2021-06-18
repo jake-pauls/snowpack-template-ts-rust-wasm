@@ -1,6 +1,6 @@
 {
   "name": "snowpack-template-ts-rust-wasm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Jake Pauls",
     "email": "jakepauls99@gmail.com",

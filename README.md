@@ -8,10 +8,10 @@ Ensure Rust is installed on your machine. For more information, check out the [R
 
 ```
 # Pull template into a working directory
-npx create-snowpack-app my-awesome-app --template snowpack-template-ts-rust-wasm
+npx create-snowpack-app my-awesome-app --template snowpack-template-ts-rust-wasm --use-yarn
 
 # Manually build and test WebAssembly module
-cd my-awesome app
+cd my-awesome-app
 yarn wasm:build && yarn wasm:test
 ```
 
