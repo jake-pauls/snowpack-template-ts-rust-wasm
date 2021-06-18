@@ -1,4 +1,4 @@
-# 🦀 Rust, WebAssembly, and Snowpack (TypeScript)
+# 🦀 Rust, WebAssembly, and Snowpack
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
