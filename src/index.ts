@@ -4,7 +4,7 @@
  *
  * Once you're ready to build, clear the file. Happy Hacking!
  */
-import init, { add, random_dom_heading } from 'wasm_crate';
+import init, { add } from 'wasm_crate';
 
 const main = async () => {
     await init();
