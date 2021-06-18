@@ -7,7 +7,7 @@
     "url": "https://jakepauls.dev"
   },
   "description": "Snowpack CSA Template for Rust and WebAssembly",
-  "repository": "github:jake-pauls/snowpack-template-rust-wasm",
+  "repository": "github:jake-pauls/snowpack-template-ts-rust-wasm",
   "keywords": [
     "snowpack",
     "csa-template",

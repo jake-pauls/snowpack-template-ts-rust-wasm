@@ -706,9 +706,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 make-fetch-happen@^9.0.1:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-9.0.2.tgz#aa8c0e4a5e3a5f2be86c54d3abed44fe5a32ad5d"
-  integrity sha512-UkAWAuXPXSSlVviTjH2We20mtj1NnZW2Qq/oTY2dyMbRQ5CR3Xed3akCDMnM7j6axrMY80lhgM7loNE132PfAw==
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-9.0.3.tgz#57bbfb5b859807cd28005ca85aa6a72568675e24"
+  integrity sha512-uZ/9Cf2vKqsSWZyXhZ9wHHyckBrkntgbnqV68Bfe8zZenlf7D6yuGMXvHZQ+jSnzPkjosuNP1HGasj1J4h8OlQ==
   dependencies:
     agentkeepalive "^4.1.3"
     cacache "^15.2.0"
@@ -1213,9 +1213,9 @@ snowpack-plugin-wasm-pack@^1.1.0:
     toml "^3.0.0"
 
 snowpack@^3.3.7:
-  version "3.5.7"
-  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-3.5.7.tgz#1d56a273c97e6f8fe23800f4d3c641eefb65f356"
-  integrity sha512-mMdbG9vSs7JL69/Zk2VtpduBnbfzCCCXvhJeX4GzPg4aYyKtfs0s6MA5VoQbN9HL6lZpKRy/knaigKcC4E29GA==
+  version "3.5.9"
+  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-3.5.9.tgz#c374c6b8633ec5baf8311adc964238edeea67b3b"
+  integrity sha512-Rajenx5DRDiMKC+GiU1vMP+tcjge9bAe35fGsPdhkTtIwRkV3u4he1TfiwTh8F1hcOcG5IzLe8jqGM9sBANtpw==
   dependencies:
     cli-spinners "^2.5.0"
     default-browser-id "^2.0.0"
@@ -1349,9 +1349,9 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
 
 typescript@^4.3.2:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.2.tgz#399ab18aac45802d6f2498de5054fcbbe716a805"
-  integrity sha512-zZ4hShnmnoVnAHpVHWpTcxdv7dWP60S2FsydQLV8V5PbS3FifjWFFRiHSWpDJahly88PRyV5teTSLoq4eG7mKw==
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.4.tgz#3f85b986945bcf31071decdd96cf8bfa65f9dcbc"
+  integrity sha512-uauPG7XZn9F/mo+7MrsRjyvbxFpzemRjKEZXS4AK83oP2KKOJPvb+9cO/gmnv8arWZvhnjVOXz7B49m1l0e9Ew==
 
 unique-filename@^1.1.1:
   version "1.1.1"
