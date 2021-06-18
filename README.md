@@ -1,10 +1,46 @@
-# New Project
+# 🦀 Rust, WebAssembly, and Snowpack (TypeScript)
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
+## Quick Start
+
+Ensure Rust is installed on your machine. For more information, check out the [Rust docs](https://www.rust-lang.org/tools/install).
+
+```
+# Pull template into a working directory
+npx create-snowpack-app my-awesome-app --template snowpack-template-ts-rust-wasm
+
+# Manually build and test WebAssembly module
+cd my-awesome app
+yarn wasm:build && yarn wasm:test
+```
+
+### Includes:
+
+- Typescript Support
+- Building and testing Rust/WebAssembly modules
+- Uses [snowpack-plugin-wasm-pack](https://www.npmjs.com/package/snowpack-plugin-wasm-pack) for HMR
+- Prettier for code linting and formatting
+
+### Additional Resources (Rust/WebAssembly):
+
+- [Rust and WebAssembly](https://rustwasm.github.io/docs/book/) (book)
+- [wasm-bindgen](https://rustwasm.github.io/wasm-bindgen/introduction.html) (docs)
+- [WebAssembly By Example](https://wasmbyexample.dev/home.en-us.html#) (examples)
+
 ## Available Scripts
 
-### npm start
+### yarn wasm:build
+
+Changes into Rust crate and builds WebAssembly into `pkg/` and `target/` directories.
+
+### yarn wasm:test
+
+Executes Rust tests bound to the WebAssembly module. Configured to run in a node environment.
+
+**Note:** Modify the directories in the scripts above after creating your own crate.
+
+### yarn start
 
 Runs the app in the development mode.
 Open http://localhost:8080 to view it in the browser.
@@ -12,7 +48,7 @@ Open http://localhost:8080 to view it in the browser.
 The page will reload if you make edits.
 You will also see any lint errors in the console.
 
-### npm run build
+### yarn build
 
 Builds a static copy of your site to the `build/` folder.
 Your app is ready to be deployed!
