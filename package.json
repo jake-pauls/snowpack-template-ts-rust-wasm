@@ -1,6 +1,6 @@
 {
   "name": "snowpack-template-ts-rust-wasm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "Jake Pauls",
     "email": "jakepauls99@gmail.com",
@@ -19,9 +19,9 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "yarn wasm:test",
-    "wasm:build": "cd wasm_crate && wasm-pack build --target web",
-    "wasm:test": "cd wasm_crate && wasm-pack test --node",
+    "test": "yarn test:wasm",
+    "build:wasm": "cd wasm_crate && wasm-pack build --target web",
+    "test:wasm": "cd wasm_crate && wasm-pack test --node",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\""
   },

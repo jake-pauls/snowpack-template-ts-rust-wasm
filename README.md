@@ -10,9 +10,12 @@ Ensure Rust is installed on your machine. For more information, check out the [R
 # Pull template into a working directory
 npx create-snowpack-app my-awesome-app --template snowpack-template-ts-rust-wasm --use-yarn
 
-# Manually build and test WebAssembly module
+# Install required Rust crates
 cd my-awesome-app
-yarn wasm:build && yarn wasm:test
+cargo install cargo-watch wasm-pack
+
+# Manually build and test WebAssembly module
+yarn build:wasm && yarn test:wasm
 ```
 
 ### Includes:
@@ -30,11 +33,11 @@ yarn wasm:build && yarn wasm:test
 
 ## Available Scripts
 
-### yarn wasm:build
+### yarn build:wasm
 
 Changes into Rust crate and builds WebAssembly into `pkg/` and `target/` directories.
 
-### yarn wasm:test
+### yarn test:wasm
 
 Executes Rust tests bound to the WebAssembly module. Configured to run in a node environment.
 
